@@ -3,13 +3,13 @@ An AI-based safety monitoring system that uses 3D depth data to detect hazards a
 
 ##  The Core Logic
 * **Object Identification**: Categorizes items like Humans, Boxes, and Pallets using labels.
-* **Safety Threshold**: Implements a strict **1.0-meter proximity limit**.
-* **Volume Filter**: Ignores small objects (noise) to prevent unnecessary stops, focusing only on significant physical hazards.
+* **Safety Threshold**: Implements a strict 1.0-meter proximity limit.
+* **Volume Filter**: Ignores small objects to prevent unnecessary stops, focusing only on significant physical hazards.
 
 ## Visualizations
 Generates a **3D Occupancy Visualization** (Top-Down view) to map the environment:
 * **Red Dots**: Immediate hazards detected within the 1.0m limit.
 * **Green Dots**: Safe objects located outside the danger zone.
 * **Blue Dots**: Small objects filtered out by the volume threshold to reduce false positives.
-* **Dashed Red Line**: Represents the critical safety boundary at **1.0m**.
+* **Dashed Red Line**: Represents the critical safety boundary at 1.0m.
 
