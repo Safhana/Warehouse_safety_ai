@@ -34,7 +34,7 @@ class WarehouseSafetyAI:
 
             if z_dist < self.LIMIT_M:
                 if vol > self.MIN_VOL:
-                    msg = "🚩 HAZARD (Inside 1.0m limit)"
+                    msg = " HAZARD (Inside 1.0m limit)"
                     self.alarm_active = True
                     dot_color = 'red'
                 else:
@@ -50,7 +50,7 @@ class WarehouseSafetyAI:
             time.sleep(0.2) 
 
         print("-" * 50)
-        final_msg = "🚩 ZONE BLOCKED" if self.alarm_active else "✅ ZONE CLEAR"
+        final_msg = " ZONE BLOCKED" if self.alarm_active else " ZONE CLEAR"
         print(f"DECISION: {final_msg}")
         
         self.generate_plot(x_points, z_points, color_map, data_feed)
